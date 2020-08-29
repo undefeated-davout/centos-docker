@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    # build: .
+    image: teruzoufox/centos-docker
+    container_name: centos-docker.app
+    tty: true
+    volumes:
+      - ./share:/share
+    ports:
+        - 5500:5500
